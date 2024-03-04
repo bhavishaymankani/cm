@@ -1,0 +1,47 @@
+Managing runbook permissions on Orchestrator servers involves controlling access to runbooks and their associated resources based on user roles and responsibilities. Here's how you can manage runbook permissions in System Center Orchestrator:
+
+### 1. Define User Roles:
+   - Identify different user roles within your organization that require access to Orchestrator runbooks and resources.
+   - Common user roles may include administrators, orchestrator operators, developers, and testers.
+
+### 2. Assign Permissions:
+   - Grant permissions to users or groups based on their roles and responsibilities.
+   - Use role-based access control (RBAC) mechanisms to assign permissions at the appropriate level (e.g., server, folder, runbook).
+
+### 3. Configure Built-in Security Roles:
+   - Orchestrator provides built-in security roles with predefined permissions.
+   - Use these security roles as a starting point and customize them to meet your organization's specific requirements.
+
+### 4. Customize Security Roles:
+   - Create custom security roles with granular permissions tailored to your organization's needs.
+   - Define permissions for actions such as viewing, editing, executing, and deleting runbooks.
+
+### 5. Control Access to Runbooks:
+   - Set permissions on individual runbooks or runbook folders to control access.
+   - Specify which users or groups can view, edit, execute, or manage each runbook.
+
+### 6. Limit Access to Sensitive Information:
+   - If your runbooks interact with sensitive data or systems, restrict access to authorized users only.
+   - Use encryption, secure credentials, and auditing mechanisms to protect sensitive information.
+
+### 7. Audit Trail:
+   - Enable auditing to track user actions and changes to runbooks.
+   - Monitor audit logs to identify unauthorized access attempts or suspicious activities.
+
+### 8. Regularly Review and Update Permissions:
+   - Periodically review user permissions and update them as needed.
+   - Remove access for users who no longer require it and grant access to new users or groups.
+
+### 9. Test Permissions:
+   - Test runbook permissions to ensure that users can perform their assigned tasks without encountering permission-related issues.
+   - Conduct thorough testing in a controlled environment before deploying changes to production.
+
+### 10. Document Permissions:
+   - Document the permissions assigned to each user role and the rationale behind them.
+   - Maintain clear documentation to facilitate communication and collaboration among team members.
+
+### 11. Provide Training and Support:
+   - Offer training sessions to educate users on how to work within Orchestrator and understand their roles and permissions.
+   - Provide ongoing support to address any questions or issues related to runbook permissions.
+
+By following these steps, you can effectively manage runbook permissions in System Center Orchestrator, ensuring that users have appropriate access to runbooks and resources while maintaining security and compliance with organizational policies. Adjust permissions as needed based on changes in user roles, responsibilities, and business requirements.

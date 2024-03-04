@@ -1,0 +1,51 @@
+Deploying Service Manager 2019 in a two-computer scenario typically involves setting up Service Manager components on separate servers for better performance, scalability, and fault tolerance. Below are the general steps to deploy Service Manager 2019 in such a scenario:
+
+Prerequisites:
+Hardware Requirements:
+
+Ensure that both servers meet the hardware requirements for running Service Manager.
+This includes CPU, memory, and disk space requirements based on your organization's workload.
+Software Requirements:
+
+Install Windows Server on both servers.
+Ensure that both servers are joined to the same Active Directory domain.
+SQL Server:
+
+Set up a dedicated SQL Server instance to host the Service Manager databases.
+Ensure that SQL Server meets the requirements specified by Service Manager.
+Deployment Steps:
+Server 1: Install Service Manager Management Server:
+
+Install the Service Manager Management Server role on the first server.
+During installation, specify the SQL Server instance where the Service Manager databases will be hosted.
+Configure the Management Server according to your organization's requirements.
+Server 2: Install Service Manager Data Warehouse Management Server:
+
+Install the Service Manager Data Warehouse Management Server role on the second server.
+Specify the same SQL Server instance used for the Service Manager databases during installation.
+Configure the Data Warehouse Management Server according to your organization's requirements.
+Configure Service Manager Databases:
+
+Create databases for Service Manager and Data Warehouse in the SQL Server instance.
+Configure database permissions and ensure proper connectivity between Service Manager servers and SQL Server.
+Configure Service Manager:
+
+After installing the Management Server and Data Warehouse Management Server roles, configure Service Manager settings.
+Configure connectors for integrating with other System Center components or external systems if required.
+Configure email notification settings, workflows, templates, and other customization options.
+Deploy Service Manager Console:
+
+Install the Service Manager console on administrator workstations or dedicated servers for accessing the Service Manager environment.
+Ensure that users have appropriate permissions to access the console and perform management tasks.
+Testing and Validation:
+
+Test Service Manager functionality to ensure that it's properly configured and meets your organization's requirements.
+Validate integrations, workflows, and automation processes to ensure seamless operation.
+Backup and Disaster Recovery:
+
+Implement backup and disaster recovery strategies for Service Manager databases and servers to protect against data loss and ensure business continuity.
+Monitoring and Maintenance:
+
+Set up monitoring tools to monitor the health and performance of Service Manager servers and databases.
+Perform regular maintenance tasks such as database maintenance, software updates, and performance tuning.
+By following these steps, you can deploy Service Manager 2019 in a two-computer scenario to effectively manage IT services and operations within your organization. Adjust the deployment process based on your specific requirements and infrastructure setup.

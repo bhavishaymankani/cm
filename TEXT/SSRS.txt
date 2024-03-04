@@ -1,0 +1,45 @@
+Integrating SQL Server Reporting Services (SSRS) with System Center Service Manager 2019 allows you to create and manage reports to analyze data and monitor the performance of your IT services. Here's a guide on how to set up SSRS with Service Manager 2019:
+
+Prerequisites:
+Install SQL Server Reporting Services:
+
+Install and configure SQL Server Reporting Services on a dedicated server or within an existing SQL Server instance. Ensure it's compatible with Service Manager 2019.
+Deploy Service Manager 2019:
+
+Install and configure System Center Service Manager 2019 on a dedicated server or virtual machine.
+Configuration Steps:
+Configure Reporting Services Integration in Service Manager:
+
+Open the Service Manager console.
+Go to the "Administration" workspace.
+Under "Administration," select "Settings."
+In the "Settings" pane, double-click "Data Warehouse Configuration."
+Enter the URL for the SQL Server Reporting Services instance and click "OK" to save the changes.
+Verify SSRS Configuration:
+
+After configuring SSRS integration, verify the connection by accessing SSRS reports through the Service Manager console.
+Create Custom Reports:
+
+Use SQL Server Report Builder or another reporting tool to create custom reports based on the data stored in the Service Manager database.
+Utilize Service Manager data warehouse views and tables to extract relevant information for your reports.
+Deploy Reports to SSRS:
+
+Publish the custom reports to SQL Server Reporting Services.
+Ensure that the reports are accessible and properly configured within SSRS.
+Access Reports in Service Manager:
+
+Open the Service Manager console.
+Navigate to the "Reporting" workspace.
+Browse and access the custom reports deployed in SSRS from within the Service Manager console.
+Schedule Report Generation and Distribution:
+
+Configure schedules for generating and distributing reports automatically.
+Utilize SSRS subscriptions to deliver reports via email or save them to a shared network location.
+Monitor Report Usage:
+
+Monitor report usage and performance to identify trends, analyze data, and make informed decisions about IT service management.
+Maintenance and Updates:
+
+Regularly maintain and update both Service Manager and SSRS to ensure compatibility and security.
+Test custom reports after Service Manager or SSRS updates to verify functionality.
+By integrating SQL Server Reporting Services with System Center Service Manager 2019, you can leverage the power of reporting to gain insights into your IT services and optimize performance. Customize reports according to your organization's requirements and regularly review and update them to meet changing needs.

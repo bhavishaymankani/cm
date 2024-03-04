@@ -1,0 +1,52 @@
+Deploying a guarded host fabric using Microsoft System Center Virtual Machine Manager (SCVMM) 2019 involves several steps to configure Host Guardian Service (HGS), guarded hosts, and shielded VMs. Guarded hosts provide secure environments for running shielded VMs, which are encrypted and protected against unauthorized access. Here's a step-by-step guide:
+
+Prerequisites:
+Infrastructure Requirements:
+
+Ensure that you have dedicated servers or virtual machines for hosting guarded hosts.
+Verify that these servers meet the hardware and software requirements specified by Microsoft for running Hyper-V and SCVMM.
+Networking Infrastructure:
+
+Configure networking infrastructure to support communication between SCVMM, guarded hosts, HGS servers, and other network components.
+HGS Server:
+
+Set up Host Guardian Service (HGS) servers to provide attestation and key protection services for guarded hosts and shielded VMs.
+Deployment Steps:
+Install and Configure HGS:
+
+Install and configure Host Guardian Service (HGS) on dedicated servers according to the documentation provided by Microsoft.
+Configure HGS to use TPM-based attestation or TPM attestation with a TPM-trusted certificate.
+Prepare Hyper-V Hosts:
+
+Prepare Hyper-V hosts that will serve as guarded hosts by installing Windows Server 2019 and enabling the Hyper-V role.
+Ensure that the hosts meet the requirements for running shielded VMs, including TPM 2.0 and Secure Boot support.
+Add Hosts to SCVMM:
+
+Add guarded hosts to SCVMM 2019 by navigating to the "Fabric" workspace, selecting "Add Resources," and choosing "Hyper-V Hosts and Clusters."
+Follow the wizard to add guarded hosts to SCVMM management.
+Configure Guarded Host Fabric:
+
+In SCVMM, navigate to the "Fabric" workspace and select "Guarded Fabric."
+Follow the wizard to configure guarded host fabric settings, including HGS integration, certificate management, and attestation policies.
+Deploy Shielded VMs:
+
+Create shielded VM templates or convert existing VMs into shielded VMs using SCVMM.
+Configure shielded VM properties, including security settings, encryption, and access policies.
+Deploy Guarded Hosts:
+
+Deploy shielded VMs onto guarded hosts using SCVMM. Specify the shielded VM template and deployment options.
+Monitor the deployment process and verify that shielded VMs are successfully provisioned on guarded hosts.
+Configure Access Policies:
+
+Define access policies in HGS to control which users and applications can access shielded VMs.
+Configure role-based access control (RBAC) settings to restrict access based on user roles and permissions.
+Monitor and Maintain:
+
+Regularly monitor guarded hosts, shielded VMs, and HGS servers using SCVMM and other management tools.
+Perform maintenance tasks such as patching, updates, and security audits to ensure the security and integrity of the guarded fabric.
+By following these steps, you can deploy a guarded host fabric using Microsoft SCVMM 2019, providing a secure environment for running shielded VMs and protecting sensitive workloads against unauthorized access. Adjust the deployment process based on your specific requirements, infrastructure setup, and security policies.
+
+
+
+
+

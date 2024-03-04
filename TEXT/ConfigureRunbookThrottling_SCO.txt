@@ -1,0 +1,39 @@
+Configuring runbook throttling in System Center Orchestrator allows you to control the execution rate of runbooks to prevent resource contention and optimize performance. Here's how you can configure runbook throttling:
+
+### 1. **Understand Runbook Throttling:**
+   - Runbook throttling controls the number of runbook instances that can execute concurrently or within a specific time period.
+   - Throttling prevents excessive resource consumption and ensures that system resources are used efficiently.
+
+### 2. **Configure Global Runbook Throttling:**
+   - Open the Orchestrator Runbook Designer.
+   - Navigate to the "Options" menu and select "Global Settings."
+   - In the "Global Settings" dialog, go to the "Runbook Throttling" tab.
+   - Adjust the settings for maximum concurrent runbook instances and maximum runbook execution rate according to your organization's requirements.
+
+### 3. **Configure Runbook Specific Throttling:**
+   - Open the Orchestrator Runbook Designer.
+   - Open the runbook you want to configure throttling for.
+   - In the "Runbook Properties" dialog, go to the "Scheduling" tab.
+   - Adjust the settings for maximum concurrent runbook instances and maximum runbook execution rate specific to this runbook, if necessary.
+
+### 4. **Consideration for Nested Runbooks:**
+   - Throttling settings for nested runbooks are inherited from the parent runbook.
+   - Ensure that throttling settings for parent runbooks are configured appropriately to avoid unexpected behavior.
+
+### 5. **Monitor Throttling:**
+   - Monitor runbook execution and performance to ensure that throttling settings are effectively controlling resource usage.
+   - Review Orchestrator logs and performance metrics to identify any instances of throttling or resource contention.
+
+### 6. **Adjust Throttling Settings:**
+   - Regularly review and adjust throttling settings based on changing workload patterns and resource availability.
+   - Monitor system performance and user feedback to determine if adjustments to throttling settings are necessary.
+
+### 7. **Testing and Validation:**
+   - Test runbook throttling settings in a controlled environment before deploying them in a production environment.
+   - Validate that throttling settings achieve the desired balance between resource utilization and performance.
+
+### 8. **Documentation:**
+   - Document the runbook throttling settings for each runbook and any adjustments made over time.
+   - Maintain documentation to facilitate troubleshooting and future configuration changes.
+
+By following these steps, you can effectively configure runbook throttling in System Center Orchestrator to control resource usage, optimize performance, and ensure reliable execution of automation workflows. Adjust throttling settings based on your organization's workload characteristics, system resources, and performance requirements.
